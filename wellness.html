@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    
+    
+    <title>Wellness Netmeds</title>
+    <style>
+
+body{
+    background-color: #f3f3f3;
+}
+
+#popular-categories{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 350px;
+    width: 95%;
+    gap: 25px;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 10px 0px 10px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    
+}
+#heading{
+    font-size: 24px;
+    margin-left: 45px;
+    font-family: 'Lato',sans-serif;
+    color: #0b1219;
+
+}
+#popular-categories>div>img{
+    width: 250px;
+    height: 270px;
+}
+#popular-categories>div{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.box{
+    height: 590px;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.inner-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+.inner-box1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+.inner-box2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+.inner-box3{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 450px;
+    width: 97%;
+    margin: auto;
+    gap: 20px;   
+    box-sizing: border-box;
+}
+
+
+.inner-box-child{
+    border: 2px solid #c9c9c9;
+    border-radius: 15px;
+    padding: 5px 15px 10px 15px;
+    box-sizing: border-box;   
+}
+.image-set{
+    width: 200px;
+    height: 200px;
+    margin-left: 35px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.text-set{
+    margin-top: -5px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    line-height: 21px;
+    color: #4d5268;  
+    cursor: pointer;  
+}
+.cursive-set{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 5px;
+    margin-top: -10px;
+    color: #a9aab5;
+    font-size: 18px;
+    cursor: pointer;
+}
+.best-price{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #7e8091;
+    
+}
+.price{
+    font-family: 'Lato', sans-serif;
+    color: #ef4281;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 5px;
+}
+.mrp{
+    font-family: 'Lato', sans-serif;
+    color: #7e8091;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 8px;
+}
+.button{
+    padding: 10px 60px 15px 60px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #24aeb1;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.para-style-1{
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    color: #6f7284;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 10px;
+    padding-top: 20px; 
+}
+.para-style-2{
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    color: #151b39;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1px;
+}
+.para-style-3{
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    color: #6f7284;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+}
+.discount{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 4px 3px;
+    border-radius: 5px;
+    line-height: 35px;
+    background-color: #84be52;
+    color: white;
+
+}
+#health-concern{
+        font-size: 30px;
+        margin-left: 45px;
+        font-family: 'Lato',sans-serif;
+        color: #0b1219;
+}
+.health-class{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 350px;
+    width: 95%;
+    gap: 25px;
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5px 10px 0px 10px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+.health-img{
+    width: 130px;
+    height: 130px;
+}
+.health-div{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+.health-img+h4{
+    margin-top: 60px;
+    font-size: 20px;
+}
+#foot{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    margin-top: 80px;
+}
+.netmeds-desc{
+    display: flex;
+    padding: 40px 35px ;
+    justify-content: space-around;
+}
+.netmeds-font{
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 130px;
+    margin-right: 270px;
+    margin-top: -15px;
+    color: #8593b5;
+    font-weight: 500;
+}
+.about-company{
+    display: flex;
+    gap: 25px;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.about-company li:nth-child(1){
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.subscribe-class{
+    padding-top: 55px;
+    padding-left: 100px;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    width: 20%;
+    margin-left: 200px;
+}
+.subscribe-class p:nth-child(1){
+    font-weight: 600;
+}
+#email{
+    border: none;
+    border-bottom: 1px solid rgba(11,18,25,.2);
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#button{
+    border: none;
+    font-size: 15px;
+    background-color: #84be52;
+    border-radius: 5px;
+}
+.play-store{
+    width: 130px;
+    margin-top: 20px;  
+    margin-right: 10px; 
+}
+.foot-bottom{
+    display: flex;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    justify-content: space-between;
+    color: #85889b;
+    padding: 0px 40px;
+    font-weight: 500;
+}
+.foot-bottom p:nth-child(1){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(2){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(3){
+    cursor: pointer;
+}
+.foot-bottom p:nth-child(4){
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid rgb(247, 13, 52); */
+    justify-content: center;
+    text-align: center;
+    background-color: #32AEB1;
+    margin-top: -16.5px;
+
+}
+.child-div {
+    width: 95%;
+    height: 75px;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-top: 8px;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+input {
+    height: 45px;
+    width: 78%;
+    /* border: 1px solid rgb(168, 13, 39); */
+    margin-left: 69px;
+    padding: 0px 64px 0px 12px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+.info {
+    display: flex;
+    width: 30%;
+    height: 55px;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 16px;
+    margin-left: 12px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+.under-child {
+    width: 80%;
+    height: 75px;
+    /* border: 1px solid rgb(103, 181, 233); */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 16px;
+    letter-spacing: normal;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+
+}
+.img-med {
+    height: 40px;
+}
+.unde-third-child {
+    display: flex;
+    height: 60px;
+    width: 15%;
+    /* border: 1px solid blueviolet; */
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+.para {
+    margin-left: 10px;
+    color: #FFFFFFCC;
+    font-family: 'Lato', sans-serif;
+}
+.search-bar {
+    width: 55%;
+    height: 50px;
+    /* border: 1px solid rgb(247, 13, 52); */
+    margin-left: 20px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+}
+.del {
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+.img-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.below-nav {
+    width: 75%;
+    height: 40px;
+    /* border: 1px solid rgb(207, 5, 106); */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #151b39;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-div">
+            <div>
+                <img class="img-logo" src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg"
+                    alt="">
+            </div>
+            <div class="search-bar">
+                <p class="del">Deliver to </p>
+                <input type="text" placeholder="Search for Medicine & Wellness products...">
+            </div>
+            <div class="info">
+                <div>
+                    <p> <a style="color: white;" href="index.html">Upload</a></p>
+                </div>
+                <div>
+                    <p> <a style="color: white;" href="emptyCart.html">Cart</a></p>
+                </div>
+                <div>
+                    <p> <a style="color: white;" href="sign.html"> Sign in / Sign up</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="child-div">
+            <div class="under-child">
+                <div class="unde-third-child">
+                    <a href="/medicine.html"><img class="img-med"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/medicine.svg"
+                            alt=""></a>
+                    <p><a class="para" href="medicine.html" >Medicine</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href="wellness.html"><img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg" alt=""></a>
+                    <p><a class="para" href="wellness.html">Wellness</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href="labtest.html"><img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg" alt=""></a>
+                    <p><a class="para" href="labtest.html">Lab Tests</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href="beauty.html"> <img class="img-med"
+                            src="https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg" alt=""></a>
+                    <p><a class="para" href="beauty.html">Beauty</a></p>
+                </div>
+                <div class="unde-third-child">
+                    <a href="healthlibrary.html"><img class="img-med"
+                            src="https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/health-library.svg"
+                            alt=""></a>
+                    <p><a class="para" href="healthlibrary.html">Health Corner</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main wellness box -->
+    <div id="wellness-main">
+        <!-- Popular Categories -->
+        <div>
+            <h2 id="heading">Popular Categories</h2>
+        </div>     
+        <div id="popular-categories">           
+            <div>
+                <img src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" alt="mask image">
+                <h4>Covid Essentials</h4>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_0.jpg" alt="vitamins image">
+                <h4>Vitamins And Supplements</h4>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/category/491/thumb/homeopathy_1.jpg" alt="Homeopathyimage">
+                <h4>Homeopathy</h4>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/category/481/thumb/ayush_0.jpg" alt="Ayurvedic image">
+                <h4>Ayurvedic</h4>
+            </div>
+            <div>
+                <img src="https://www.netmeds.com/images/category/665/thumb/devices_1.jpg" alt="devices image">
+                <h4>Devices</h4>
+            </div>
+        </div>
+        <div class="box">
+            <!-- Limited Time Deals box -->
+
+            <p class="para-style-1">Limited Time Deals</p>
+            <p class="para-style-2">Limited Time Deals</p>
+            <p class="para-style-3">Grab Before The Deal Ends</p>
+            <div class="inner-box">
+                
+            </div>
+        </div>
+        <div class="box">
+            <!-- Covid Essentials box -->
+            <p class="para-style-1">Covid Essentials</p>
+            <p class="para-style-2">Covid Essentials</p>
+            <div class="inner-box1">
+                
+            </div>
+        </div>
+        <div class="box">
+            <!--                                                   Best Seller Box                                       -->
+            <p class="para-style-1">Best Seller on Netmeds</p>
+            <p class="para-style-2">Best Seller on Netmeds</p>
+            <div class="inner-box2">
+                
+            </div>
+        </div>
+        <div class="box">
+            <p class="para-style-1">Best in Creams/Oils/Lotions</p>
+            <p class="para-style-2">Best in Creams/Oils/Lotions</p>
+            <div class="inner-box3">
+               
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 id="health-concern">Health Concerns</h2>
+            </div>
+            <div class="health-class">           
+                <div class="health-div">
+                    <img class="health-img" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/diabetic-care.jpg?v=1" alt="mask image">
+                    <h4>Diabetic Care</h4>
+                </div>
+                <div class="health-div">
+                    <img class="health-img" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/de-addiction.jpg?v=1" alt="vitamins image">
+                    <h4>De-Addiction</h4>
+                </div>
+                <div class="health-div">
+                    <img  class="health-img" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1" alt="Homeopathyimage">
+                    <h4>Lung Care</h4>
+                </div>
+                <div class="health-div">
+                    <img class="health-img" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1" alt="Ayurvedic image">
+                    <h4>Weight Care</h4>
+                </div>
+                <div class="health-div">
+                    <img class="health-img" src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1" alt="devices image">
+                    <h4>Women's Care</h4>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div class="netmeds-desc">
+                <div>
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+                </div>
+                <div class="netmeds-font">
+                    <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies,
+                         with over 100 years’ experience in dispensing quality medicines.</p>
+                </div>
+            </div>
+            <hr style="width: 95%; ">
+            <div style="display: flex;">
+                <div class="about-company">
+                    <ul>
+                        <li><p> COMPANY</p></li>
+                        <li><p>About Netmeds</p></li>
+                        <li><p>Customers Speak</p></li>
+                        <li><p>In the News</p></li>
+                        <li><p>Career</p></li>
+                        <li><p>Terms and Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+                        <li><p>Fees and Payments Policy</p></li>
+                        <li><p>Shipping and Delivery Policy</p></li>
+                        <li><p>Return, Refund and Cancellation Policy</p></li>
+                        <li><p>Contact</p></li>
+                    </ul>
+                    <ul>
+                        <li><p>SHOPPING</p></li>
+                        <li><p>Browse by A-Z</p></li>
+                        <li><p>Browse by Manufacturers</p></li>
+                        <li><p>Health Articles</p></li>
+                        <li><p>Offers / Coupons</p></li>
+                        <li><p>FAQs</p></li>
+                    </ul>
+                    <ul>
+                        <li><p> SOCIAL</p></li>
+                        <li><p>Patients Alike</p></li>
+                        <li><p>Facebook</p></li>
+                        <li><p>Twitter</p></li>
+                        <li><p>LinkedIn</p></li>
+                        <li><p>Youtube</p></li> 
+                </div>
+                <div class="subscribe-class">
+                    <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+                    <form action="">
+                        <input id="email"  type="text" placeholder="Enter your email address">
+                        <button id="button" title="Go" type="submit">Go</button>
+                    </form>
+                   <a href="https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds&hl=en" target="blank"> 
+                       <img class="play-store"  src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                    </a>
+                   <a href="https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011" target="blank"> 
+                       <img class="play-store" src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+                    </a>   
+                </div>   
+            </div>
+            <hr style="width: 95%;">
+            <div class="foot-bottom">
+                <p>Medicine</p>
+                <p>Wellness</p>
+                <p>Lab Test</p>
+                <p>Beauty</p>
+                <p>Copyright© 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script> 
+
+// wellness Page data 
+
+
+limitedPeriodData = [
+    {productDisc : "38% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/930971/skin_elements_face_pack_turmeric_multani_mitti_100_gm_0_2.jpg",
+    productName:"Skin Element Face Pack - Turmeric and Multani Mitti 100",
+    productManuf: "Mkt: Kapco Internation Limited",
+    productBestrice: "Best Price*",
+    productPrice:" 247.38",
+    productMrp: "MRP",
+    productStriked: "399.00",
+    },
+    {productDisc : "38% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/924985/skin_elements_mens_intimate_wash_60_ml_0_2.jpg",
+    productName:"Skin Elements Men's Intimate Wash 60 ml",
+    productManuf: "Mkt: Kapco Internation Limited",
+    productBestrice: "Best Price*",
+    productPrice:" 247.38",
+    productMrp: "MRP",
+    productStriked: "399.00",
+    },
+    {productDisc : "40% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/924992/skin_elements_mens_intimate_wash_120_ml_0_2.jpg",
+    productName:"Skin Elements Men's Intimate Wash 120 ml",
+    productManuf: "Mkt: Kapco Internation Limited",
+    productBestrice: "Best Price*",
+    productPrice:" 419.40",
+    productMrp: "MRP",
+    productStriked: "699.00",
+    },
+    {productDisc : "20% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/927520/prolixr_daily_essentials_bundle_0_0.jpg",
+    productName:"Prolixr Daily Essential Bundle",
+    productManuf: "Mkt: Maxinique Solution Pvt Ltd",
+    productBestrice: "Best Price*",
+    productPrice:" 1837.60",
+    productMrp: "MRP",
+    productStriked: "2297.00",
+    },
+    {productDisc : "38% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/927532/prolixr_definite_detox_bundle_0_0.jpg",
+    productName:"Prolixr Definite Detox Bundle",
+    productManuf: "Mkt: Maxinique Solution Pvt Ltd",
+    productBestrice: "Best Price*",
+    productPrice:" 2397.00",
+    productMrp: "MRP",
+    productStriked: "3000.00",
+    }
+];
+
+var covidEssentialsData = [
+    {productDisc : "0% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/947142/patanjali_divya_swasari_coronil_kit_0_0.jpg",
+    productName:"Patanjali Divya Swasari Coronil Kit",
+    productManuf: "Mkt: Patanjali Ayurved Ltd",
+    productBestrice: "Best Price*",
+    productPrice:" 545.00",
+    productMrp: "MRP",
+    productStriked: "545.00",
+    },
+    {productDisc : "55% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/915649/accusure_pulse_oximeter_0_0.jpg",
+    productName:"AccuSure Pulse Oximeter Oximeter",
+    productManuf: "Mkt: Microgene Diagnostic",
+    productBestrice: "Best Price*",
+    productPrice:" 1799.55",
+    productMrp: "MRP",
+    productStriked: "3999.00",
+    },
+    {productDisc : "3% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/835057/dettol_antiseptic_liquid_550_ml_0.jpg",
+    productName:"Dettol Antiseptic Liquid  500 ml Liquid",
+    productManuf: "Mkt: Kapco Internation Limited",
+    productBestrice: "Best Price*",
+    productPrice:" 194.60",
+    productMrp: "MRP",
+    productStriked: "200.00",
+    },
+    {productDisc : "13.5% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/948692/oxy5_refillable_portable_oxygen_can_6_litre_0_1.jpg",
+    productName:"Oxy5 Refillable Portable Oxygen Can 6 Litre",
+    productManuf: "Mkt: Handylife",
+    productBestrice: "Best Price*",
+    productPrice:" 562.25",
+    productMrp: "MRP",
+    productStriked: "650.00",
+    },
+    {productDisc : "23% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/839437/fast_up_charge_natural_vitamin_c_tablets_orange_flavour_20_s_0.jpg",
+    productName:"Fast&Up Charge Natural Vitamin C & Zinc Tablets",
+    productManuf: "Mkt: Aeronutrix Sports Products",
+    productBestrice: "Best Price*",
+    productPrice:" 300.30",
+    productMrp: "MRP",
+    productStriked: "390.00",
+    }
+];
+
+var bestsellerData = [
+    {productDisc : "14% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/15580/accu_chek_active_test_strips_50s_0_1.jpg",
+    productName:"Accu-Check Active Test Strips 50's",
+    productManuf: "Mkt: Roche Diabetes Care India",
+    productBestrice: "Best Price*",
+    productPrice:" 838.50",
+    productMrp: "MRP",
+    productStriked: "975.00",
+    },
+    {productDisc : "8% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/354458/accu_chek_active_test_strip_100_s_0.jpg",
+    productName:"Accu-Check Instant Test Strips 100",
+    productManuf: "Mkt: Roche Diabetes Care India",
+    productBestrice: "Best Price*",
+    productPrice:" 1587.00",
+    productMrp: "MRP",
+    productStriked: "1725.00",
+    },
+    {productDisc : "15% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/835774/accu_chek_instant_test_strips_50_s_0.jpg",
+    productName:"Accu-Check Instant Test Strips 50's",
+    productManuf: "Mkt: Roche Diabetes Care India",
+    productBestrice: "Best Price*",
+    productPrice:" 828.75",
+    productMrp: "MRP",
+    productStriked: "975.00",
+    },
+    {productDisc : "20% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/950142/mylab_coviself_covid_19_rapid_antigen_self_test_kit_0_1.jpg",
+    productName:"Mylab Coviself Covid-19 Self Test Kit",
+    productManuf: "Mkt: Mylab Discovery Solutions",
+    productBestrice: "Best Price*",
+    productPrice:" 200.00",
+    productMrp: "MRP",
+    productStriked: "250.00",
+    },
+    {productDisc : "0% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/383204/onetouch_select_test_strip_50s_0_4.jpg",
+    productName:"Onetouch Select Test Strip 50's",
+    productManuf: "Mkt: Lifescan Medical Device India",
+    productBestrice: "Best Price*",
+    productPrice:" 1145.00",
+    productMrp: "MRP",
+    productStriked: "1145.00",
+    }
+];
+
+var creamsData = [
+    {productDisc : "5% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/829438/ayur_herbal_body_care_lotion_cocoa_butter_1000_ml_0_1.jpg",
+    productName:"Ayur Herbal Body Care Lotion - Cocoa Butter",
+    productManuf: "Mkt: Ayur Herbals",
+    productBestrice: "Best Price*",
+    productPrice:" 247.00",
+    productMrp: "MRP",
+    productStriked: "260.00",
+    },
+    {productDisc : "10% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/889433/aroma_magic_juniper_berry_oil_free_moisturiser_100_ml_0_0.jpg",
+    productName:"Aroma Magic Junipor Berry Oil Free Moisturiser 100 ml",
+    productManuf: "Mkt: Blossom Kochhar Beauty",
+    productBestrice: "Best Price*",
+    productPrice:" 184.00",
+    productMrp: "MRP",
+    productStriked: "205.00",
+    },
+    {productDisc : "5% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/833986/nivea_nourishing_lotion_body_milk_deep_moisture_serum_200_ml_0_1.jpg",
+    productName:"Nivea Nourishing Lotion Body Milk",
+    productManuf: "Mkt: Nivea India Pvt. Ltd.",
+    productBestrice: "Best Price*",
+    productPrice:" 189.05",
+    productMrp: "MRP",
+    productStriked: "199.00",
+    },
+    {productDisc : "5% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/829452/ayur_herbal_moisturizer_lotion_1000_ml_0.jpg",
+    productName:"Ayur Herbal Moisturiser Lotion 1000ml",
+    productManuf: "Mkt: Ayur Herbals",
+    productBestrice: "Best Price*",
+    productPrice:" 247.00",
+    productMrp: "MRP",
+    productStriked: "260.00",
+    },
+    {productDisc : "5% OFF",
+    productImg:"https://www.netmeds.com/images/product-v1/150x150/829441/ayur_herbal_deep_cleansing_milk_lotion_with_aloe_vera_500_ml_0.jpg",
+    productName:"Ayur Herbal Deep Cleansing Milk Lotion with Aloe Vera",
+    productManuf: "Mkt: Ayur Herbals",
+    productBestrice: "Best Price*",
+    productPrice:" 166.25",
+    productMrp: "MRP",
+    productStriked: "175.00",
+    }
+];
+
+function displayData(limitedPeriodData){
+
+    limitedPeriodData.map(function(element){
+
+    var divison = document.createElement("div")
+    divison.setAttribute("class","inner-box-child")
+
+    var span0 = document.createElement("span")
+    span0.setAttribute("class","discount")
+    span0.innerText = element.productDisc
+
+    var span1 = document.createElement("span")
+
+    var image1 = document.createElement("img")
+    image1.src = element.productImg
+    image1.setAttribute("class","image-set")
+
+    var head4 = document.createElement("h4")
+    head4.setAttribute("class","text-set")
+    head4.innerText = element.productName
+
+    var para1 = document.createElement("p")
+    para1.setAttribute("class","cursive-set")
+    para1.innerText = element.productManuf
+
+    var span2 = document.createElement("span")
+    span2.setAttribute("class","best-price")
+    span2.innerText = element.productBestrice
+
+    var span3 = document.createElement("span")
+    span3.setAttribute("class","price")
+    span3.innerText = element.productPrice
+
+    var para2 = document.createElement("p")
+    para2.setAttribute("class","mrp")
+    para2.innerText = element.productMrp
+
+    var strikedPrice = document.createElement("strike")
+    strikedPrice.innerText = element.productStriked
+
+    var button1 = document.createElement("button")
+    button1.setAttribute("class","button")
+    button1.innerText = "ADD TO CART"
+    button1.addEventListener("click",function(){
+        addToCart(element)
+    })
+
+
+    span1.append(image1)
+    para2.append(strikedPrice)
+
+    divison.append(span0,span1,head4,para1,span2,span3,para2,button1)
+
+    document.querySelector(".inner-box").append(divison)
+
+    });
+}
+
+
+function displayData1(covidEssentialsData){
+
+    covidEssentialsData.map(function(element){
+
+    var divison = document.createElement("div")
+    divison.setAttribute("class","inner-box-child")
+
+    var span0 = document.createElement("span")
+    span0.setAttribute("class","discount")
+    span0.innerText = element.productDisc
+
+    var span1 = document.createElement("span")
+
+    var image1 = document.createElement("img")
+    image1.src = element.productImg
+    image1.setAttribute("class","image-set")
+
+    var head4 = document.createElement("h4")
+    head4.setAttribute("class","text-set")
+    head4.innerText = element.productName
+
+    var para1 = document.createElement("p")
+    para1.setAttribute("class","cursive-set")
+    para1.innerText = element.productManuf
+
+    var span2 = document.createElement("span")
+    span2.setAttribute("class","best-price")
+    span2.innerText = element.productBestrice
+
+    var span3 = document.createElement("span")
+    span3.setAttribute("class","price")
+    span3.innerText = element.productPrice
+
+    var para2 = document.createElement("p")
+    para2.setAttribute("class","mrp")
+    para2.innerText = element.productMrp
+
+    var strikedPrice = document.createElement("strike")
+    strikedPrice.innerText = element.productStriked
+
+    var button1 = document.createElement("button")
+    button1.setAttribute("class","button")
+    button1.innerText = "ADD TO CART"
+    button1.addEventListener("click",function(){
+        addToCart(element)
+    })
+
+
+    span1.append(image1)
+    para2.append(strikedPrice)
+
+    divison.append(span0,span1,head4,para1,span2,span3,para2,button1)
+
+    document.querySelector(".inner-box1").append(divison)
+
+    });
+}
+
+function displayData2(bestsellerData){
+
+    bestsellerData.map(function(element){
+
+    var divison = document.createElement("div")
+    divison.setAttribute("class","inner-box-child")
+
+    var span0 = document.createElement("span")
+    span0.setAttribute("class","discount")
+    span0.innerText = element.productDisc
+
+    var span1 = document.createElement("span")
+
+    var image1 = document.createElement("img")
+    image1.src = element.productImg
+    image1.setAttribute("class","image-set")
+
+    var head4 = document.createElement("h4")
+    head4.setAttribute("class","text-set")
+    head4.innerText = element.productName
+
+    var para1 = document.createElement("p")
+    para1.setAttribute("class","cursive-set")
+    para1.innerText = element.productManuf
+
+    var span2 = document.createElement("span")
+    span2.setAttribute("class","best-price")
+    span2.innerText = element.productBestrice
+
+    var span3 = document.createElement("span")
+    span3.setAttribute("class","price")
+    span3.innerText = element.productPrice
+
+    var para2 = document.createElement("p")
+    para2.setAttribute("class","mrp")
+    para2.innerText = element.productMrp
+
+    var strikedPrice = document.createElement("strike")
+    strikedPrice.innerText = element.productStriked
+
+    var button1 = document.createElement("button")
+    button1.setAttribute("class","button")
+    button1.innerText = "ADD TO CART"
+    button1.addEventListener("click",function(){
+        addToCart(element)
+    })
+
+
+    span1.append(image1)
+    para2.append(strikedPrice)
+
+    divison.append(span0,span1,head4,para1,span2,span3,para2,button1)
+
+    document.querySelector(".inner-box2").append(divison)
+
+    });
+}
+
+function displayData3(creamsData){
+
+    creamsData.map(function(element){
+
+    var divison = document.createElement("div")
+    divison.setAttribute("class","inner-box-child")
+
+    var span0 = document.createElement("span")
+    span0.setAttribute("class","discount")
+    span0.innerText = element.productDisc
+
+    var span1 = document.createElement("span")
+
+    var image1 = document.createElement("img")
+    image1.src = element.productImg
+    image1.setAttribute("class","image-set")
+
+    var head4 = document.createElement("h4")
+    head4.setAttribute("class","text-set")
+    head4.innerText = element.productName
+
+    var para1 = document.createElement("p")
+    para1.setAttribute("class","cursive-set")
+    para1.innerText = element.productManuf
+
+    var span2 = document.createElement("span")
+    span2.setAttribute("class","best-price")
+    span2.innerText = element.productBestrice
+
+    var span3 = document.createElement("span")
+    span3.setAttribute("class","price")
+    span3.innerText = element.productPrice
+
+    var para2 = document.createElement("p")
+    para2.setAttribute("class","mrp")
+    para2.innerText = element.productMrp
+
+    var strikedPrice = document.createElement("strike")
+    strikedPrice.innerText = element.productStriked
+
+    var button1 = document.createElement("button")
+    button1.setAttribute("class","button")
+    button1.innerText = "ADD TO CART"
+    button1.addEventListener("click",function(){
+        addToCart(element)
+    })
+
+
+    span1.append(image1)
+    para2.append(strikedPrice)
+
+    divison.append(span0,span1,head4,para1,span2,span3,para2,button1)
+
+    document.querySelector(".inner-box3").append(divison)
+
+    });
+}
+
+var userCart = JSON.parse(localStorage.getItem("cartData")) || []
+
+function addToCart(element){
+    userCart.push(element)
+    localStorage.setItem("cartData",JSON.stringify(userCart))
+}
+
+displayData(limitedPeriodData)
+displayData1(covidEssentialsData)
+displayData2(bestsellerData)
+displayData3(creamsData)
+
+
+</script>
